@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(13, 90px);
+      grid-template-rows: repeat(9, 90px);
+    }
+
+    .yellow {
+      grid-row: 1 / 4;
+      grid-column: 4 / 7;
+      background-color: yellow;
+    }
+
+    .orange {
+      grid-row: 4 / 7;
+      grid-column: 1 / 4;
+      background-color: orange;
+    }
+
+    .blue {
+      grid-row: 4 / 7;
+      grid-column: 4 / 7;
+      background-color: blue;
+    }
+
+    .red {
+      grid-row: 4 / 7;
+      grid-column: 7 / 10;
+      background-color: red;
+    }
+
+    .white {
+      grid-row: 7 / 10;
+      grid-column: 4 / 7;
+      background-color: white;
+    }
+
+    .green {
+      grid-row: 1 / 4;
+      grid-column: 11 / 14;
+      background-color: green;
+    }
+
+    .box {
+      display: grid;
+      grid-template-columns: repeat(3, 90px);
+      grid-template-rows: repeat(3, 90px);
+    }
+
+    .cell {
+      border: 1px solid #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box yellow">
+      <div class="cell">
+        <span>A</span>
+        <span>zh</span>
+      </div>
+      <div class="cell">
+        <span>A</span>
+        <span>zh</span>
+      </div>
+      <div class="cell">
+        <span>B</span>
+        <span>in</span>
+      </div>
+      <div class="cell">
+        <span>D</span>
+        <span>ai</span>
+      </div>
+      <div class="cell"></div>
+      <div class="cell">
+        <span>B</span>
+        <span>in</span>
+      </div>
+      <div class="cell">
+        <span>D</span>
+        <span>ai</span>
+      </div>
+      <div class="cell">
+        <span>C</span>
+        <span>ao</span>
+      </div>
+      <div class="cell">
+        <span>C</span>
+        <span>ao</span>
+      </div>
+    </div>
+    <div class="box orange">
+      <div class="cell">
+        <span>E</span>
+        <span>C</span>
+      </div>
+      <div class="cell">
+        <span>E</span>
+        <span>B</span>
+      </div>
+      <div class="cell">
+        <span>F</span>
+        <span>en</span>
+      </div>
+      <div class="cell">
+        <span>H</span>
+        <span>ang</span>
+      </div>
+      <div class="cell"></div>
+      <div class="cell">
+        <span>F</span>
+        <span>en</span>
+      </div>
+      <div class="cell">
+        <span>H</span>
+        <span>ang</span>
+      </div>
+      <div class="cell">
+        <span>G</span>
+        <span>eng</span>
+      </div>
+      <div class="cell">
+        <span>G</span>
+        <span>eng</span>
+      </div>
+    </div>
+    <div class="box blue">
+      <div class="cell">
+        <span>I</span>
+        <span>ch</span>
+      </div>
+      <div class="cell">
+        <span>I</span>
+        <span>ch</span>
+      </div>
+      <div class="cell">
+        <span>J</span>
+        <span>an</span>
+      </div>
+      <div class="cell">
+        <span>L</span>
+        <span>iang</span>
+        <span>uang</span>
+      </div>
+      <div class="cell"></div>
+      <div class="cell">
+        <span>J</span>
+        <span>an</span>
+      </div>
+      <div class="cell">
+        <span>L</span>
+        <span>iang</span>
+        <span>uang</span>
+      </div>
+      <div class="cell">
+        <span>K</span>
+        <span>ing</span>
+        <span>uai</span>
+      </div>
+      <div class="cell">
+        <span>K</span>
+        <span>ing</span>
+        <span>uai</span>
+      </div>
+    </div>
+    <div class="box red">
+      <div class="cell">
+        <span>M</span>
+        <span>ian</span>
+      </div>
+      <div class="cell">
+        <span>M</span>
+        <span>ian</span>
+      </div>
+      <div class="cell">
+        <span>N</span>
+        <span>iao</span>
+      </div>
+      <div class="cell">
+        <span>P</span>
+        <span>ie</span>
+        <span>er</span>
+        <span>u</span>
+      </div>
+      <div class="cell"></div>
+      <div class="cell">
+        <span>N</span>
+        <span>iao</span>
+      </div>
+      <div class="cell">
+        <span>P</span>
+        <span>ie</span>
+        <span>er</span>
+        <span>u</span>
+      </div>
+      <div class="cell">
+        <span>O</span>
+        <span>sh</span>
+      </div>
+      <div class="cell">
+        <span>O</span>
+        <span>sh</span>
+      </div>
+    </div>
+    <div class="box white">
+      <div class="cell">
+        <span>W</span>
+        <span>ei</span>
+      </div>
+      <div class="cell">
+        <span>W</span>
+        <span>ei</span>
+      </div>
+      <div class="cell">
+        <span>X</span>
+        <span>ia</span>
+        <span>ua</span>
+      </div>
+      <div class="cell">
+        <span>Z</span>
+        <span>ou</span>
+      </div>
+      <div class="cell"></div>
+      <div class="cell">
+        <span>X</span>
+        <span>ia</span>
+        <span>ua</span>
+      </div>
+      <div class="cell">
+        <span>Z</span>
+        <span>ou</span>
+      </div>
+      <div class="cell">
+        <span>Y</span>
+        <span>un</span>
+      </div>
+      <div class="cell">
+        <span>Y</span>
+        <span>un</span>
+      </div>
+    </div>
+    <div class="box green">
+      <div class="cell">
+        <span>Q</span>
+        <span>iu</span>
+      </div>
+      <div class="cell">
+        <span>Q</span>
+        <span>iu</span>
+      </div>
+      <div class="cell">
+        <span>R</span>
+        <span>uan</span>
+      </div>
+      <div class="cell">
+        <span>T</span>
+        <span>ue</span>
+        <span>ui</span>
+        <span>u</span>
+      </div>
+      <div class="cell"></div>
+      <div class="cell">
+        <span>R</span>
+        <span>uan</span>
+      </div>
+      <div class="cell">
+        <span>T</span>
+        <span>ue</span>
+        <span>ui</span>
+        <span>u</span>
+      </div>
+      <div class="cell">
+        <span>S</span>
+        <span>ong</span>
+        <span>iong</span>
+      </div>
+      <div class="cell">
+        <span>S</span>
+        <span>ong</span>
+        <span>iong</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
